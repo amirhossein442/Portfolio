@@ -3,7 +3,8 @@ import { ThemeToggle } from "../Component/ThemeToggle";
 import { StartBackground } from "../Component/startBackground";
 import { Navbar } from "../Component/Navbar";
 import { HeroSection } from "../Component/HeroSection";
-import { AboutMe } from "../Component/AboutMe";
+import { AboutMeSection } from "../Component/AboutMeSection";
+import { SkillsSection } from "../Component/SkillsSection";
 
 export const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -26,7 +27,8 @@ export const Home = () => {
       {/*Main*/}
       <main>
         <HeroSection />
-        <AboutMe isDarkMode={isDarkMode}/>
+        <AboutMeSection isDarkMode={isDarkMode}/>
+        <SkillsSection />
       </main>
 
     </div>

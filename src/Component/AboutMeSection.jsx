@@ -1,6 +1,6 @@
 import { Briefcase, Code, User } from "lucide-react";
 
-export const AboutMe = ({isDarkMode}) => {
+export const AboutMeSection = ({isDarkMode}) => {
   return (
     <section id="about" className="py-24 px-4 md:px-20 relative">
       <div className=" mx-auto max-w-5xl">

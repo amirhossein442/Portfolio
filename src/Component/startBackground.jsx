@@ -22,7 +22,7 @@ export const StartBackground = () => {
   }
   const generateStars = () => {
     const numberOfStar = Math.floor(
-      (window.innerWidth * window.innerHeight) / 1000
+      (window.innerWidth * window.innerHeight) / 3000
     );
     const newStars = [];
 
