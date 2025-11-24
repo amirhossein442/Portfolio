@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handelScrolled = () => {
-      setIsScrolled(window.scroll > 10);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handelScrolled);
     return () => window.removeEventListener("scroll", handelScrolled);
@@ -25,9 +25,9 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-40 transition-all duration-300 ${
+      className={`py-5 fixed w-full z-30 transition-all duration-300 ${
         isScrolled
-          ? " bg-background/80 backdrop-blur-md shadow-xs}"
+          ? " bg-background/80 backdrop-blur-md shadow-xs"
           : ""
       }`}
     >
@@ -53,10 +53,10 @@ export const Navbar = () => {
         </div>
 
         {/*Mobile nav*/}
-        <button className="md:hidden p-2 z-50" onClick={()=> setIsMenuOpen((prev)=> !prev)}>{isMenuOpen ? <X size={28} /> : <Menu size={28} />}</button>
+        <button className="md:hidden px-2  z-40" onClick={()=> setIsMenuOpen((prev)=> !prev)}>{isMenuOpen ? <X size={28} /> : <Menu size={28} />}</button>
 
         <div
-          className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden
+          className={` fixed inset-0 bg-background/95 backdrop-blur-sm z-30 flex flex-col items-center justify-center transition-all duration-300 md:hidden
             ${
               isMenuOpen
                 ? "opacity-100 pointer-events-auto"

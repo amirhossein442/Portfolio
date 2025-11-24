@@ -40,7 +40,7 @@ export const AboutMeSection = ({isDarkMode}) => {
         </div>
 
         <div className="grid grid-cols-1 gap-6">
-          <div className={`gradient-border p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
+          <div className={`gradient-border rounded-lg p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-purple-500/10 ">
                 <Code />
@@ -54,7 +54,7 @@ export const AboutMeSection = ({isDarkMode}) => {
               </div>
             </div>
           </div>
-          <div className={`gradient-border p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
+          <div className={`gradient-border rounded-lg p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-purple-500/10 ">
                 <User />
@@ -68,7 +68,7 @@ export const AboutMeSection = ({isDarkMode}) => {
               </div>
             </div>
           </div>
-          <div className={`gradient-border p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
+          <div className={`gradient-border rounded-lg p-6 ${isDarkMode ? "bg-slate-950" : "bg-slate-950/10"}  `}>
             <div className="flex items-start gap-4">
               <div className="p-3 rounded-full bg-purple-500/10 ">
                 <Briefcase />

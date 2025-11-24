@@ -5,6 +5,7 @@ import { Navbar } from "../Component/Navbar";
 import { HeroSection } from "../Component/HeroSection";
 import { AboutMeSection } from "../Component/AboutMeSection";
 import { SkillsSection } from "../Component/SkillsSection";
+import { Footer } from "../Component/Footer";
 
 export const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -15,8 +16,6 @@ export const Home = () => {
         isDarkMode ? "bg-black text-white" : "bg-white text-black"
       } `}
     >
-      {/*ThemeToggle*/ }
-      <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       {/*StartBackground*/ }
       <StartBackground />
@@ -24,12 +23,18 @@ export const Home = () => {
       {/*Navbar*/ }
       <Navbar />
 
+      {/*ThemeToggle*/ }
+      <ThemeToggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+
       {/*Main*/}
       <main>
         <HeroSection />
         <AboutMeSection isDarkMode={isDarkMode}/>
-        <SkillsSection />
+        <SkillsSection isDarkMode={isDarkMode}/>
+        {/*ProjectSection*/}
+        {/*ContactSection*/}
       </main>
+      <Footer />
 
     </div>
   );

@@ -52,16 +52,17 @@
   animation: fade-in 0.8s ease forwards;
   animation-delay: 1s;
 }
-/*navar skills*/
-@keyframes fill {
+/*navbar skills*/
+@keyframes grow  {
   from {
-    width: 0%;
+    transform: scaleX(0);
   }
   to {
-    width: 100%;
+    transform: scaleX(0.5);
+
   }
 }
 
-.animate-fill {
-  animation: fill 1.5s ease-out forwards;
+.animate-grow {
+  animation: grow 1.5s ease-out forwards;
 }
