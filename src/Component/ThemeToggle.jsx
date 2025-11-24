@@ -22,6 +22,6 @@ export const ThemeToggle = ({ isDarkMode, setIsDarkMode }) => {
   };
 
   return (
-    <button className="pt-5  px-5 flex ml-auto fixed z-[1000] " onClick={toggleTheme}>{isDarkMode ? <Sun className="text-yellow-200"/> : <Moon />}</button>
+    <button className="pt-5  md:px-5 flex ml-auto fixed z-[1000] " onClick={toggleTheme}>{isDarkMode ? <Sun className="text-yellow-200"/> : <Moon />}</button>
   );
 };
