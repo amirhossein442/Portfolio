@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I'm</span>
-            <span className="text-purple-500 opacity-0 animate-fade-in-delay-1">
+            <span className="text-purple-700 opacity-0 animate-fade-in-delay-1">
               Amirhossein
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
@@ -28,7 +28,7 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className=" absolute bottom-14   flex flex-col items-center justify-center animate-bounce ">
+      <div className=" absolute bottom-14  flex flex-col items-center justify-center animate-bounce ">
         <span className="text-sm mb-2">Scroll</span>
         <ArrowDown className=" h-5 w-5 text-purple-500 " />
       </div>

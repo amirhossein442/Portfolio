@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Home } from "./Pages/Home"
 import { NotFound } from "./Pages/NotFound"
+import { Toast } from "@radix-ui/react-toast"
 
 
 

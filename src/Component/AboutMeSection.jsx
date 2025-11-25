@@ -5,7 +5,7 @@ export const AboutMeSection = ({isDarkMode}) => {
     <section id="about" className="py-24 px-4 md:px-20 relative">
       <div className=" mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-          About<span className="text-purple-500">Me</span>
+          About<span className="text-purple-700">Me</span>
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">

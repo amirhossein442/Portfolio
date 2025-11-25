@@ -6,6 +6,8 @@ import { HeroSection } from "../Component/HeroSection";
 import { AboutMeSection } from "../Component/AboutMeSection";
 import { SkillsSection } from "../Component/SkillsSection";
 import { Footer } from "../Component/Footer";
+import { ProjectSection } from "../Component/ProjectSection";
+import { ContactSection } from "../Component/ContactSection";
 
 export const Home = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,8 +33,8 @@ export const Home = () => {
         <HeroSection />
         <AboutMeSection isDarkMode={isDarkMode}/>
         <SkillsSection isDarkMode={isDarkMode}/>
-        {/*ProjectSection*/}
-        {/*ContactSection*/}
+        <ProjectSection />
+        <ContactSection />
       </main>
       <Footer />
 
