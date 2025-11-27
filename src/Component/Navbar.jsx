@@ -1,6 +1,5 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { href } from "react-router-dom";
 
 const navbarItems = [
   { name: "Home", href: "#hero" },

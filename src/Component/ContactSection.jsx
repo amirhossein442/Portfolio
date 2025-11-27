@@ -11,8 +11,6 @@ import {
 } from "lucide-react";
 
 export const ContactSection = () => {
-
-
   return (
     <section id="contact" className="py-24 relative">
       <h2 className="text-3xl md:text-4xl font-bold mb-4  text-center">
@@ -133,10 +131,8 @@ export const ContactSection = () => {
                 className="flex px-10 py-3 rounded-full bg-purple-700 hover:bg-purple-600"
               >
                 Submit
-                <Send className=" ml-2"/>
+                <Send className=" ml-2" />
               </button>
-
-              
             </div>
           </form>
         </div>
