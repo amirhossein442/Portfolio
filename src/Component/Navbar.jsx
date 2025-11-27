@@ -52,7 +52,7 @@ export const Navbar = () => {
         </div>
 
         {/*Mobile nav*/}
-        <button className="md:hidden px-2  z-40" onClick={()=> setIsMenuOpen((prev)=> !prev)}>{isMenuOpen ? <X size={28} /> : <Menu size={28} />}</button>
+        <button className="md:hidden px-2  z-40" onClick={()=> setIsMenuOpen((prev)=> !prev)}>{isMenuOpen ? <X size={28} /> : <Menu size={28} />}
 
         <div
           className={` fixed inset-0 bg-background/95 backdrop-blur-sm z-30 flex flex-col items-center justify-center transition-all duration-300 md:hidden
@@ -74,6 +74,7 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
+        </button>
       </div>
     </nav>
   );
