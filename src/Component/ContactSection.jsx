@@ -20,7 +20,7 @@ export const ContactSection = () => {
         Have a project in mind or want to collaborate? Feel free to reach out.
         I'm always open to discussing new opportunities.
       </p>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 ">
         <div className="space-y-8">
           <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
           <div className="space-y-6 justify-center">
@@ -68,8 +68,7 @@ export const ContactSection = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="">
+          <div className="">
           <h4 className="text-xl font-semibold mb-6">Connect With Me</h4>
           <div className="flex space-x-4 ">
             <a>
@@ -83,9 +82,11 @@ export const ContactSection = () => {
             </a>
           </div>
         </div>
+        </div>
+        
         <div className="">
-          <h4 className="text-xl font-semibold mb-6">Send a Message</h4>
-          <form className="space-y-6  bg-slate-950/30  py-5 px-5 rounded-md">
+          <h4 className="text-xl font-semibold mb-6 mt-12 md:mt-0">Send a Message</h4>
+          <form className="space-y-6  bg-slate-950/30  lg:py-12 lg:px-14 rounded-md">
             <div>
               <label htmlFor="name" className="block font-medium mb-2">
                 Your Name
